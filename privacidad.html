@@ -13,23 +13,41 @@
 </head>
 <body>
 <h1>Política de Privacidad — Novacula</h1>
-<p class="muted">Última actualización: septiembre de 2026 · <a href="privacy.html">English version</a></p>
+<p class="muted">Última actualización: 21 de octubre de 2026 · <a href="privacy.html">English version</a></p>
 
 <h2>Resumen</h2>
-<p><strong>Kolino Labs no recopila ni recibe datos personales a través de Novacula.</strong>
-La app funciona 100% sin conexión: no realiza ninguna petición a internet, no contiene
-anuncios, no usa servicios de analítica ni rastreadores de ningún tipo.</p>
+<p>Novacula no requiere una cuenta y sus herramientas procesan el contenido en el
+dispositivo. Kolino Labs no recibe tus fotos, códigos QR, contraseñas, datos de ubicación
+ni la información de tu ficha ICE. La app no contiene anuncios. El escáner QR utiliza
+Google ML Kit, que puede comunicarse con servidores de Google y enviar datos técnicos
+de diagnóstico y uso, como se explica a continuación. Las funciones principales pueden
+usarse sin conexión; el Escáner de Red necesita acceso a tu red WiFi local.</p>
 
-<h2>Datos que NO recopilamos</h2>
-<p>Kolino Labs no recibe datos de uso de Novacula. La app no tiene servidores,
-no crea cuentas y no envía información a terceros por sí misma. Si eliges compartir
-un archivo o abrir un enlace, el sistema operativo entrega esa acción a la aplicación
-o servicio que selecciones.</p>
+<h2>Diagnósticos del escáner QR</h2>
+<p>Para reconocer códigos QR, Novacula integra Google ML Kit en Android e iOS. Según
+la documentación de Google, el SDK puede recopilar información del dispositivo y de la
+app, identificadores por instalación, métricas de rendimiento, configuración de la API,
+eventos de uso y códigos de error. En Android también puede recopilar el tamaño de la
+entrada y la salida y la versión de la función. Google usa estos datos para diagnóstico
+y análisis de uso, los transmite cifrados mediante HTTPS y declara que no los comparte
+con terceros. Kolino Labs no recibe esos diagnósticos. ML Kit procesa las imágenes y el
+contenido de los códigos en el dispositivo; Google declara que no envía ese contenido
+ni los resultados del escaneo a sus servidores. El SDK también puede contactar a Google
+para recibir correcciones y actualizaciones de modelos o compatibilidad.</p>
+<p>Fuentes: <a href="https://developers.google.com/ml-kit/terms">privacidad de ML Kit</a>,
+<a href="https://developers.google.com/ml-kit/android-data-disclosure">datos de Android</a> y
+<a href="https://developers.google.com/ml-kit/ios-data-disclosure">datos de iOS</a>.</p>
+
+<h2>Datos que Kolino Labs no recibe</h2>
+<p>Kolino Labs no opera servidores para la app ni recibe datos de uso de Novacula.
+Si eliges compartir un archivo o abrir un enlace, el sistema operativo entrega esa
+acción a la aplicación o servicio que selecciones.</p>
 
 <h2>Permisos del dispositivo y para qué se usan</h2>
 <ul>
 <li><strong>Cámara</strong> — escanear códigos QR, la lupa y el espejo. Las imágenes se
-procesan en el dispositivo y no se guardan ni se envían.</li>
+procesan en el dispositivo y no se guardan ni se envían; ML Kit puede enviar los datos
+técnicos indicados arriba.</li>
 <li><strong>Micrófono</strong> — medir el nivel de decibelios del entorno. El audio se
 analiza en tiempo real y nunca se graba.</li>
 <li><strong>Ubicación (solo mientras usas la app)</strong> — el sistema operativo la exige
@@ -50,7 +68,7 @@ La ficha ICE es información que tú introduces voluntariamente y nunca abandona
 dispositivo.</p>
 
 <h2>Menores</h2>
-<p>Novacula no recopila datos de nadie, incluidos menores de edad.</p>
+<p>Novacula está dirigida a personas de 18 años o más y no está diseñada para niños.</p>
 
 <h2>Cambios</h2>
 <p>Si esta política cambia, la nueva versión se publicará en esta misma dirección con la
